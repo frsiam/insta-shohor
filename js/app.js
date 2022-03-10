@@ -16,7 +16,8 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
-    likedPostsId.plus(id); 
+  console.log(id)
+    likedPostsId.push(id); 
     showPosts(posts);
 };
 
@@ -51,6 +52,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  // console.log(post)
     const image = post.image;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
